@@ -7,4 +7,9 @@ RSpec.describe Solver do
             
         end
     end
+    describe '#String Reverse Test' do
+    it 'should reverse a word' do
+        
+    end
+  end
 end
