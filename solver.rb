@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Class representing a Solver for various problems.
 class Solver
   def factorial(num)
     return 1 if [0, 1].include?(num)
@@ -15,12 +18,12 @@ class Solver
   end
 
   def fizzbuzz(num)
-    if num % 3 == 0 && num % 5 == 0
-      "fizzbuzz"
-    elsif num % 3 == 0
-      "fizz"
-    elsif num % 5 == 0
-      "buzz"
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
     else
       num.to_s
     end
