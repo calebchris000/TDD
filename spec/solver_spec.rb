@@ -1,5 +1,5 @@
+require 'rspec'
 require_relative '../solver'
-require 'RSpec'
 
 RSpec.describe Solver do
   describe '#Factorial Test' do
