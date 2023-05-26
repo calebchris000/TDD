@@ -23,5 +23,10 @@ RSpec.describe Solver do
       returned_string = 'fizzbuzz'
       expect(solver.fizzbuzz(number)).to eq(returned_string)
     end
+    it 'should raise exception for negative number' do
+      solver = Solver.new
+      negative_number = -15
+      expect{solver.fizzbuzz(negative_number)}.to raise_exception('Cannot check for negative number')
+    end
   end
 end
