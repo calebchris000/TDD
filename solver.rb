@@ -16,7 +16,8 @@ class Solver
   end
 
   def fizzbuzz(num)
-    raise 'Cannot check for negative number' if num < 0
+    raise 'Cannot check for negative number' if num.negative?
+
     if (num % 3).zero? && (num % 5).zero?
       'fizzbuzz'
     elsif (num % 3).zero?
@@ -28,3 +29,6 @@ class Solver
     end
   end
 end
+
+solver = Solver.new
+puts solver.fizzbuzz(-3)
